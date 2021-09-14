@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <Title>Formulario Clientes</Title>
+        <header>
+        </header>
+    </head>
+    <body>
+        <h2>¡Sea un cliente BIMBO!</h2>
+        <!--Formulario:-->
+        <form action="http://localhost:8080/PROYECTO_BIMBO/FORMULARIO_PHP.php" method="POST" align=center>
+            <p>Primer nombre <input type="text" name="nombre"/></p>
+            <p>Segundo nombre <input type="text" name="Snombre"/></p>
+            <p>Primer apellido <input type="text" name="apellido"/></p>
+            <p>Segundo apellido <input type="text" name="Sapellido"/></p>
+            <p>Cargo ejercido en la empresa <input type="text" name="cargo"/></p>
+            <p>Nombre de su empresa <input type="text" name="nombreE"/></p>
+            <p>E-mail: <input type="text" name="contactoE" placeholder="email.personal@gmail.com"/></p>
+            <p>Sede principal de ubicación de la empresa <input type="text" name="SedeP" placeholder="Ciudad"/></p>
+            <p>Código postal de la sede <input type="number" name="CodPos" placeholder="000000"/></p>
+            <p>Número del personal de la empresa <input type="number" name="Npersonal" placeholder="Número de empleados"/></p>
+            <p>Contacto <input type="text" name="Contacto" placeholder="email@empresa.com"/></p>
+            <p>Mensaje <input type="text" name="Mensaje" placeholder="Déjenos saber qué desea"/></p>
+            <p>Fecha <input type="text" name="fecha" placeholder="DD/MM/AAAA"/></p>
+            <p><input type="submit" value="Enviar"/></p>
+        </form>
+        <Style>
+            p {
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 18;
+                color: #7F8FC3;
+            }
+            input {
+                text-align: center;
+                font-size: 18;
+                color: #7F8FC3;
+
+            }
+            form {
+                margin-top: 50px;
+            }
+            h2 {
+                text-align: center;
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 100;
+                color: #7F8FC3;
+                font-size: 30px;
+                margin-top: 150px;
+            }
+        </Style>>
+    </body>
+</html>
