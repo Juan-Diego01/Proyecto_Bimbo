@@ -39,7 +39,7 @@ $totpanart = $panart * $cant4;
 $totpanbl = $panbl * $cant5;
 $totpanint = $panint * $cant6;
 
-//estas son las variables de selección múltiple
+//estas son las constantes de selección múltiple
 $gans = 2000;
 $tort = 5000;
 $ping = 1500;
@@ -71,35 +71,42 @@ echo "El mensaje dejado por el solicitando es: " . $Mensaje . "<br/>";
 echo "La fecha del día de la solicitud: " . $fecha . "<br/>";
 echo "El subtotal de los productos comprados es:" . $subtotal . "<br/>";
 
-//Los siguientes son condicionales para los campos obligatorios:
+//El siguiente es un condicional para que en caso de que no se llenen todos los espacios, se redirija al archivo html:
     if (!$_POST) {
         header('Location:Formulario_HTML.html');
     }
 
+    //Los siguientes son condicionales para los campos obligatoriosn en este caso es el nombre:
     if (empty($_POST['nombre'])) {
         echo "El nombre es requerido";
     }
 
+    //Los siguientes son condicionales para los campos obligatoriosn en este caso es el apellido:
     if (empty($_POST['apellido']) {
         echo "El apellido es requerido";
     }
 
+    //Los siguientes son condicionales para los campos obligatoriosn en este caso es el cargo:
     if (empty($_POST['cargo'])) {
         echo "Su cargo es requerido";
     }
 
+    //Los siguientes son condicionales para los campos obligatoriosn en este caso es el nombre de la empresa:
     if (empty($_POST['nombreE']) {
         echo "El nombre de la empresa es requerido";
     }
 
+    //Los siguientes son condicionales para los campos obligatoriosn en este caso es la sede principal:
     if (empty($_POST['SedeP'])) {
         echo "La sede principal es requerida";
     }
 
+    //Los siguientes son condicionales para los campos obligatoriosn en este caso es el contacto:
     if (empty($_POST['Contacto'])) {
         echo "El email de contacto con la empresa es requerido";
     }
 
+    //Los siguientes son condicionales para los campos obligatoriosn en este caso es la fecha:
     if (empty($_POST['fecha'])) {
         echo "La fecha es requerida";
     }
@@ -107,14 +114,14 @@ echo "El subtotal de los productos comprados es:" . $subtotal . "<br/>";
 //en esta parte se hacen los cálculos para poder determinar los descuentos.
     if ($subtotal > 30000) {
         $desc = $subtotal * 0.2;
-        echo "¡Felicidades!, el monto total es mayor a $30.000, te regalamos un descuento del 20%. En total tienes que pagar:" . $total . "<br/>"
+        echo "¡Felicidades!, el monto total es mayor a $30.000, te regalamos un descuento del 20%. En total tienes que pagar:" . $total - $desc . "<br/>"
     } elseif {
         ($subtotal = 30000) {
             $desc = $subtotal * 0.1;
-            echo "¡Felicidades!, el monto total es igual a $30.000, te regalamos un descuento del 10%. En total tienes que pagar:" . $total . "<br/>"
+            echo "¡Felicidades!, el monto total es igual a $30.000, te regalamos un descuento del 10%. En total tienes que pagar:" . $total - $desc . "<br/>"
     } else {
         ($subtotal <30000)
-        echo "Lo sentimos, tu monto de productos no alcanza los $30.000, por lo tanto no podemos ofrecerte el descuento del 15%."
+        echo "Lo sentimos, tu monto de productos no alcanza los $30.000, por lo tanto no podemos ofrecerte el descuento del 15%, tienes que pagar: " . $subtotal . "<br/>"
     }
 }
 ?>
