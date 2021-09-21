@@ -1,0 +1,55 @@
+/* Estilos de Form-Compra.php*/
+
+.titulo {
+    font-size: 30pt;
+    text-shadow: 5px 3px 2px #93968f, -3px 6px 5px #58bce3;
+}
+
+.imagen {
+    width: 13%;
+    height: 13%;
+}
+
+.Medtitulo {
+    font-family: Florence, Cursive;
+    color: rgb(20, 109, 136); 
+    margin-left: 25%;
+    font-size: 23px;
+}
+
+.parr0 {
+    font-family: Florence, Cursive;
+    color: rgb(20, 109, 136);
+    font-size: 23px;
+}
+
+.parr1 {
+    font-family: Florence, Cursive;
+    color: rgb(20, 109, 136);
+    font-size: 23px;
+    margin-left: 25%;
+    font-weight: bold;
+}
+
+select {
+    font-family: Florence, Cursive;
+    color: black; 
+    margin-left: 28%;
+}
+
+.frase {
+    font-family: Tahoma;
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    font-size: large;
+    background-color: rgb(37, 36, 138);
+    background-size: 30%;
+    padding: 10px;
+    box-shadow: 0 0 10px 4px #4a47ff, 0 0 10PX 20px #b9ebff;
+}
+
+.fra1 {
+    font-family: tahoma;
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
